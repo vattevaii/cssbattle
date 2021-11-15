@@ -6,67 +6,55 @@
 
 ![result](./images/8-forking-crazy.png)
 
+- This one really hurt my head.. So damn mysterious...
 ```html
-<div class="wrapper">
-  <div class="stick"></div>
-  <div class="body"></div>
-  <div class="claw-wrapper">
-    <div class="claw"></div>
-    <div class="claw reverse"></div>
-    <div class="claw"></div>
-    <div class="claw reverse"></div>
-    <div class="claw"></div>
-    <div class="claw reverse"></div>
-    <div class="claw"></div>
-  </div>
-</div>
+<div class="a">
+<c></c>
+<c></c>
+<c></c>
+<c></c>
 <style>
-  * {
-    margin: 0;
-  }
-  body {
-    background: #6592CF;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  }
-  .wrapper {
-    width: 140px;
-    height: 250px;
-    position: relative;
-  }
-  div:not(.wrapper):not(.claw-wrapper) {
-    background: #060F55;
-  }
-  .stick {
-    width: 20px;
-    height: 60px;
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 10px);
-  }
-  .body {
-    width: 140px;
-    height: 100px;
-    position: absolute;
-    bottom: 50px;
-    border-bottom-left-radius: 80px;
-    border-bottom-right-radius: 80px;
-  }
-  .claw-wrapper {
-    width: 140px;
-    height: 110px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .claw {
-    width: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
-  .claw.reverse {
-    transform: scaleY(-1);
-    background: #6592CF !important;
-  }
-</style>
+    * {
+        background: #6592CF;
+        margin: 50 auto
+    }
+
+    .a {
+        background: #060F55;
+        width: 140;
+        height: 150;
+        border-radius: 0 0 100vw 100vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .a::after {
+        content: '';
+        position: fixed;
+        background: #060F55;
+        width: 20;
+        height: 100;
+        top: 240;
+        left: 190
+    }
+
+    c {
+        display: inline-block;
+        width: 20;
+        height: 120;
+        transform: translateY(-50px);
+        border-radius: 100vw;
+        background: #060F55;
+        margin: 0
+    }
+
+    c::after {
+        position: absolute;
+        content: '';
+        left: 20;
+        width: 20;
+        height: 110;
+        border-radius: 100vw;
+        background: #6592CF;
+    }
 ```
