@@ -7,37 +7,25 @@
 ![result](./images/2-carrom.png)
 
 ```html
-<div class="wrapper">
-  <div class="box top-left"></div>
-  <div class="box top-right"></div>
-  <div class="box bottom-left"></div>
-  <div class="box bottom-right"></div>  
-</div>
+<a><b><c><d>
 <style>
-  body {
-    background: #62374e;
-  }
-  .wrapper {
-    width: 300px;
-    height: 200px;
-    margin: 50px auto;
-    position: relative;
-  }
-  .box {
-    width: 50px;
-    height: 50px;
-    background: #fdc57b;
-    position: absolute;
-  }
-  .box.top-right {
-    right: 0
-  }
-  .box.bottom-left {
-    bottom: 0;
-  }
-  .box.bottom-right {
-    bottom: 0;
-    right: 0;
-  }
-</style>
+    * {
+        background: #62374e;
+        position: fixed
+    }
+
+    a,b,c,d {
+        background: #fdc57b;
+        height: 50;
+        width: 50;
+        top: 50;
+        left: 50
+    }
+
+    b,c {
+        left: 300
+    }
+
+    c,d {
+        top: 200
 ```
