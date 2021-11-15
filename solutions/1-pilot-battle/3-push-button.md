@@ -8,7 +8,7 @@
 ![result](./images/3-push-button.png)
 
 ```html
-<<a></a><b></b><c></c><d></d>
+<a></a><b></b><c></c><d></d>
 <style>
     body {
         background: #6592CF;
