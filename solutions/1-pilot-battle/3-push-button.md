@@ -4,44 +4,52 @@
 
 [Link to the problem](https://cssbattle.dev/play/3)
 
+- GLITCH in the image below .. i dont know why 
 ![result](./images/3-push-button.png)
 
 ```html
-<div class="wrapper">
-  <div class="circle circle-outer"></div>
-  <div class="circle circle-center"></div>
-</div>
+<<a></a><b></b><c></c><d></d>
 <style>
-  body {
-    background: #6592CF;
-  }
-  .wrapper {
-    width: 300px;
-    height: 150px;
-    background: #243D83;
-    margin: 75px auto;
-    position: relative;
-  }
-  .circle {
-    border-radius: 50%;
-  }
-  .circle-outer {
-    position: absolute;
-    left: 25px;
-    top: -50px;
-    width: 250px;
-    height: 250px;
-    background: transparent;
-    box-sizing: border-box;
-    border: 50px solid #6592CF;
-  }
-  .circle-center {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 125px;
-    top: 50px;
-    background: #EEB850;
-  }
-</style>
+    body {
+        background: #6592CF;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    a,
+    b,
+    c,
+    d {
+        position: fixed;
+        background: #243D83
+    }
+
+    a,
+    c {
+        height: 150;
+        width: 300
+    }
+
+    b {
+        height: 250;
+        width: 250;
+        background: #6592CF
+    }
+
+    b,
+    c,
+    d {
+        border-radius: 50%
+    }
+
+    c {
+        width: 150
+    }
+
+    d {
+        background: #EEB850;
+        height: 50;
+        width: 50
+    }
 ```
