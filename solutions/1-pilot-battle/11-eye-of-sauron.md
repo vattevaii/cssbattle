@@ -6,56 +6,14 @@
 
 ![result](./images/11-eye-of-sauron.png)
 
+- Master the concepts of gradients first you fool!!
 ```html
-<div class="half-circle left"></div>
-<div class="circle">
-	<div class="circle-inside"></div>
-</div>
-<div class="half-circle right"></div>
 <style>
-  * {
-    margin: 0;
-  }
-  body {
-    background: #191210;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-  }
-  .circle {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-   	border: 20px solid #ECA03D;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .circle-inside {
-    background: #84271C;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  .half-circle {
-    width: 100px;
-    height: 50px;
-    box-sizing: border-box;
-    border: 20px solid #ECA03D;
-    border-top: 0;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-  }
-  .half-circle.left {
-    margin-right: -20px;
-    margin-top: 50px;
-  }
-  .half-circle.right {
-    margin-left: -20px;
-    margin-top: -50px;
-    transform: scaleY(-1);
-  }
-</style>
+body {
+    background: 
+        radial-gradient(circle at 100px 0px, #191210 9%, #ECA03D 9% 15%, transparent 15%) 0 150px no-repeat,
+        radial-gradient(circle at 300px 150px, #191210 9%, #ECA03D 9% 15%, transparent 15%) no-repeat,
+        radial-gradient(circle, #84271C 10%, #191210 10% 20%, #ECA03D 20% 28%, #191210 28%);
+    background-size: 400px 150px, 400px 150px, 400px 300px
+}
 ```
