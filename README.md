@@ -4,6 +4,8 @@ Let's design with code!
 
 Here is my solutions for some problems on cssbattle.dev. Maybe this is not the best solution, but it's work!
 
+- Hello, this is Ashish and I forked this repo, I'll upload my own solutions for this fork..
+
 Some problems may be skipped for some reason.
 
 ## Scoring
