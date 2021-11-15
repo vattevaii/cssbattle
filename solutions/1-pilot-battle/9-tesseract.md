@@ -6,47 +6,31 @@
 
 ![result](./images/9-tesseract.png)
 
+- Gradients can do so much!! I didn't know until yesterday :p 
 ```html
-<div class="rectangle"></div>
-<div class="square1"></div>
-<div class="square2"></div>
-<div class="circle"></div>
+<div>
+<c>
 <style>
-  * {
-    margin: 0;
-  }
-  body {
-    background: #222730;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  body > * {
-    position: absolute;
-  }
-  .rectangle{
-    width: 400px;
-    height: 150px;
-    background: #4CAAB3;
-    margin-top: 0px;
-  }
-  .square1 {
-    width: 250px;
-    height: 250px;
-    background: #222730;
-    transform: rotate(45deg);
-  }
-  .square2 {
-    width: 150px;
-    height: 150px;
-    background: #4CAAB3;
-    transform: rotate(45deg);
-  }
-  .circle {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #393E46;
-  }
+    body {
+        background: linear-gradient(#222730 25%, #4CAAB3 25% 75%, #222730 75%);
+        background-size: 400px 300px
+    }
+
+    div {
+        position: fixed;
+        top: 50vh;
+        left: 50vw;
+        box-shadow: 0 0 0 75px#4CAAB3, 0 0 0 125px#222730;
+        transform: rotate(45deg)
+    }
+
+    c {
+        position: absolute;
+        content: '';
+        border: 25px solid#393E46;
+        top: -25;
+        left: -25;
+        border-radius: 50%
+    }
 </style>
 ```
