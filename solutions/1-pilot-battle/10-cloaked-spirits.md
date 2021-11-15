@@ -4,49 +4,43 @@
 
 [Link to the problem](https://cssbattle.dev/play/10)
 
-![result](./images/10-cloaked-spirits.png)
-
+![result](./images/10-cloaked spirits.png)
+- So in love with gradients now...
 ```html
-<div class="rectangle">
-  <div class="circle"></div>
-</div>
-<div class="rectangle center">
-  <div class="circle"></div>
-</div>
-<div class="rectangle">
-  <div class="circle"></div>
-</div>
+<div></div>
+<div class="a"></div>
+<div></div>
 <style>
-  * {
-    margin: 0;
-  }
-  body {
-    background: #62306D;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 0 50px;
-  }
-  .rectangle {
-    background: #F7EC7D;
-    width: calc(100% / 3);
-    height: 100px;
-  }
-  .rectangle.center {
-    height: 200px;
-  }
-  .circle {
-    width: 100px;
-    height: 100px;
-    background: #E38F66;
-    border-radius: 50%;
-   	border: 20px solid #AA445F;
-    box-sizing: border-box;
-    margin-top: -50px;
-  }
-  .center .circle {
-    background: #AA445F;
-    border-color: #E38F66;
-  }
-</style>
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(to left, #62306D 50px, #F7EC7D 50px 350px, #62306D 350px)
+    }
+
+    div {
+        position: relative;
+        height: 67vh;
+        width: 101px;
+        background: #62306D
+    }
+
+    div::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 49;
+        width: 1;
+        height: 1;
+        box-shadow: 0 0 0 30px#E38F66, 0 0 0 50px #AA445F;
+        border-radius: 50%
+    }
+
+    .a {
+        transform: translateY(-35vh)
+    }
+
+    .a::after {
+        box-shadow: 0 0 0 30px#AA445F, 0 0 0 50px#E38F66;
+    }
 ```
